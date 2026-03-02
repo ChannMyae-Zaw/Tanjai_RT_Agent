@@ -16,7 +16,7 @@ app = FastAPI(title="TanjAI - Voice AI Assistant")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-REALTIME_URL = "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17"
+REALTIME_URL = "wss://api.openai.com/v1/realtime?model=gpt-4o-mini-realtime-preview-2024-12-17"
 
 SYSTEM_PROMPT = """You are TanjAI (แทนใจ), a professional and friendly Google Workspace sales representative from Tangerine Company.
 
